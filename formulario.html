@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 35ch;
+      }
+      label:has(input[type="radio"]), label:has(input[type="checkbox"]) {
+        flex-direction: row;
+        width: unset;
+      }
+      fieldset {
+        width: 35ch;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label>
+        Nome:
+        <input type="text" name="name" />
+      </label>
+      <label>
+        E-mail:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Data de Nascimento:
+        <input type="date" name="date" />
+      </label>
+      <label>
+        Idade:
+        <input type="number" name="age" min="0" max="200" />
+      </label>
+      <label>
+        Senha:
+        <input type="password" name="password" />
+      </label>
+      <fieldset>
+        <legend>Genero:</legend>
+        <label>
+          <input type="radio" name="gender" value="man" />
+          Masculino
+        </label>
+        <label>
+          <input type="radio" name="gender" value="woman" />
+          Feminino
+        </label>
+        <label>
+          <input type="radio" name="gender" value="nb" />
+          Não Binario
+        </label>
+        <label>
+          <input type="radio" name="gender" value="ns" />
+          Não Especificado
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Esporte:</legend>
+        <label>
+          <input type="checkbox" name="gender" value="man" />
+          Natação
+        </label>
+        <label>
+          <input type="checkbox" name="gender" value="woman" />
+          Futebol
+        </label>
+        <label>
+          <input type="checkbox" name="gender" value="nb" />
+          Ciclismo
+        </label>
+        <label>
+          <input type="checkbox" name="gender" value="ns" />
+          Basquete
+        </label>
+      </fieldset>
+
+      <label>
+        UF
+        <select name="uf">
+            <option value="df">DF</option>
+            <option value="go">GO</option>
+            <option value="sc">SC</option>
+        </select>
+      </label>
+      
+      <label>
+        Mensagem:
+        <textarea name="message"></textarea>
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
