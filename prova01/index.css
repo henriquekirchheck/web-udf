@@ -1,0 +1,52 @@
+.layout {
+    display: grid;
+    grid-template-areas: 
+        "img img"
+        "link contact"
+        "list content";
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 200px 1.2lh 1fr;
+    gap: 0.15rem;
+
+    width: 100dvw;
+    height: 100dvh;
+
+    
+}
+
+.img {
+    grid-area: img;
+    border: 1px solid black
+}
+
+.link {
+    grid-area: link;
+    text-align: right;
+    border: 1px solid black
+}
+
+.contact {
+    grid-area: contact;
+    border: 1px solid black
+}
+
+.list {
+    grid-area: list;
+    border: 1px solid black
+}
+
+.content {
+    grid-area: content;
+    padding: 0.5rem;
+    border: 1px solid black
+}
+
+.layout > nav {
+    display: contents;
+}
+
+.img > img {
+    width: 100%;
+    height: 100%;
+}
