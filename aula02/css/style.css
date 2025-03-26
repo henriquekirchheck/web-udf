@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navigation > ul > li > a {
+  padding: 0.8rem;
+  background-color: #7df9ff;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation > ul > li > a:hover {
+  background-color: #7df9ff;
+  box-shadow: 2px 3px black;
+  border: 2px solid black;
+}
+
+#gallery > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.2rem;
+  padding: 1.2rem;
+  padding-top: 0;
+}
+
+#gallery > div > img {
+  width: 100%;
+  border: 2px solid black;
+  box-shadow: 4px 6px black;
+}
+
+#about {
+  background-color: #c6fab4;
+}
+
+#gallery {
+  background-color: #a5b4fb;
+}
+
+#gallery > h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+#maps {
+  padding: 1.2rem;
+  background-color: #fff59f;
+}
+
+#maps > iframe {
+  border: 2px solid black;
+  box-shadow: 4px 6px black;
+}
+
+#about {
+    display: flex;
+    padding: 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.first {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#banner > img {
+    width: 100%;
+}
+
+#banner {
+    background-color: #9ee7eb;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #a5b4fb;
+}
+
+.card {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    box-shadow: 8px 8px black;
+    background-color: white;
+}
